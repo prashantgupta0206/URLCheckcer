@@ -1,0 +1,19 @@
+{
+  "name": "urlchecker",
+  "version": "1.0.0",
+  "description": "URLChecker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantgupta0206/URLCheckcer.git"
+  },
+  "author": "Prashant Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashantgupta0206/URLCheckcer/issues"
+  },
+  "homepage": "https://github.com/prashantgupta0206/URLCheckcer#readme"
+}
