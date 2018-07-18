@@ -1,9 +1,11 @@
-// var http = require('http');
 var webDriver = require('selenium-webdriver');
 var By = require('selenium-webdriver').By;
 var until = require('selenium-webdriver').until;
-// const {webDriver,Builder, By, Key, until} = require('selenium-webdriver');
 var path = require('chromedriver').path;
+const XLSX = require('xlsx');
+const fs = require('fs');
+
+
 
 
 // var browser = new webDriver.Builder().withCapabilities(webDriver.Capabilities.chrome()).build();
@@ -27,9 +29,33 @@ var input = "https://www-k6.thinkcentral.com/content/hsp/math/gomath2012/na/grk/
     }
   })();
 
-  // var request = require('request');
-  // request('http://www.google.com', function (error, response, body) {
-  //   console.log('error:', error); // Print the error if one occurred
-  //   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-  //   //console.log('body:', body); // Print the HTML for the Google homepage.
-  // });
+
+ // Write Data in XLSx
+//   newInput.splice(0, 0, headers); 
+//   let data = newInput; 
+//   let ws = XLSX.utils.aoa_to_sheet(data); 
+//       let wb = XLSX.utils.book_new(); 
+//       XLSX.utils.book_append_sheet(wb, ws, "Output"); 
+//       XLSX.writeFile(wb, 'output.xlsx',  {type:'buffer', bookType:"xlsx"}); 
+//       console.log("Output xls has been created successfully!!!!")
+
+// Read File
+// let newArr; 
+// let readData = [];
+// fs.readFile('input.txt', function(err, data) {
+    //     if (err) {
+    //         throw err; 
+    //     }else {
+    //          newArr = data.toString().split('\n'); 
+    //          var count = 1; 
+    //         for (let i = 0; i <= newArr.length-1; i++ ) {
+    //             readData.push(newArr[i]); 
+    //             if (readData.length == splitCount || newArr.length-1 == i) {
+    //                 writeData(readData, count); 
+    //                 readData = [];
+    //                 count++;
+    //             }
+                
+    //         }
+    //     }
+    // })
