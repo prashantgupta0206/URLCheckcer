@@ -32,7 +32,6 @@ let headers = ["URL", "Link Check Code", "Direct Check Code", "Code Logic Code"]
     for (let j = 0; j <= readData.length - 1; j++) {
       await driver.findElement(webDriver.By.name('targ_url')).sendKeys(readData[j]);
       await driver.findElement(webDriver.By.xpath("//input[@value='Test LTI Link']")).click();
-      await driver.wait(until.elementIsVisible, 50000);
       await driver.findElement(webDriver.By.xpath("/html/body/div[3]/section/p[3]")).getText()
         .then(function (elem) {
           var str = elem.replace(/\s/g, '');
